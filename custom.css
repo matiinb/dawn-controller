@@ -3,11 +3,18 @@
    ========================= */
 
 .controller.custom {
-    position: relative;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    /*position: relative;*/
     width: 806px;
     height: 598px;
     background: url("https://matiinb.github.io/dawn-controller/base.png") no-repeat;
     background-size: 806px 598px;
+}
+
+.controller.custom {
+    
 }
 
 /* disconnected */
