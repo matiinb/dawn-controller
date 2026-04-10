@@ -2,9 +2,9 @@
    CUSTOM PS4-STYLE SKIN
    ========================= */
 
-body::before {
+.controller::before {
     content: "";
-    position: fixed;
+    position: absolute;
     inset: 0;
     background: url(https://matiinb.github.io/dawn-controller/particles.gif) center / contain no-repeat;
     mix-blend-mode: screen;
@@ -16,8 +16,8 @@ body::before {
     /* -webkit-mask-size: auto 98vh; */
     mask-image: url(https://matiinb.github.io/dawn-controller/mask.png);
     mask-repeat: no-repeat;
-    mask-position: 22px 172px;
-    mask-size: auto 586px;
+    mask-position: -124px 0px;
+    mask-size: auto 587px;
 }
 
 .controller.custom {
