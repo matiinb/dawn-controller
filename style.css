@@ -1,0 +1,290 @@
+/* BEGIN CLEAN PS4 CONTROLLER CSS - 3x exported assets, normal display size */
+
+.controller.ds4 {
+    position: relative;
+    width: 806px;
+    height: 598px;
+    background: url(https://matiinb.github.io/dawn-controller/base.png) no-repeat;
+    background-size: 806px 598px;
+}
+
+.ds4.disconnected {
+    /* background: url(ps4-assets/disconnected.png) no-repeat; */
+    background-size: 806px 598px;
+}
+
+.ds4.disconnected div {
+    display: none;
+}
+
+/* TRIGGERS */
+.ds4 .triggers {
+    position: absolute;
+    left: 109px;
+    top: 0;
+    width: 588px;
+    height: 90px;
+}
+
+.ds4 .trigger {
+    width: 99px;
+    height: 90px;
+    background: url(https://matiinb.github.io/dawn-controller/triggers.png) no-repeat;
+    background-size: 198px 90px;
+    opacity: 0;
+}
+
+.ds4 .trigger.left {
+    float: left;
+    background-position: 0 0;
+}
+
+.ds4 .trigger.right {
+    float: right;
+    background-position: -99px 0;
+}
+
+.ds4 .trigger.pressed {
+    opacity: 1;
+}
+
+/* BUMPERS */
+.ds4 .bumpers {
+    position: absolute;
+    left: 109px;
+    top: 94px;
+    width: 588px;
+    height: 23px;
+}
+
+.ds4 .bumper {
+    width: 99px;
+    height: 23px;
+    background: url(https://matiinb.github.io/dawn-controller/bumper.png) no-repeat;
+    background-size: 99px 23px;
+    opacity: 0;
+}
+
+.ds4 .bumper.left {
+    float: left;
+}
+
+.ds4 .bumper.right {
+    float: right;
+    transform: rotateY(180deg);
+}
+
+.ds4 .bumper.pressed {
+    opacity: 1;
+}
+
+/* TOUCHPAD */
+.ds4 .touchpad {
+    position: absolute;
+    left: 272px;
+    top: 122px;
+    width: 262px;
+    height: 151px;
+}
+
+.ds4 .touchpad.pressed {
+    /* background: url(ps4-assets/touchpad.png) no-repeat; */
+    background-size: 262px 151px;
+}
+
+/* META / PS BUTTON */
+.ds4 .meta {
+    position: absolute;
+    left: 382px;
+    bottom: 216px;
+    width: 42px;
+    height: 42px;
+}
+
+.ds4 .meta.pressed {
+    /* background: url(ps4-assets/meta.png) no-repeat; */
+    background-size: 42px 42px;
+}
+
+/* BACK / START */
+.ds4 .arrows {
+    position: absolute;
+    left: 227px;
+    top: 142px;
+    width: 352px;
+    height: 46px;
+}
+
+.ds4 .back,
+.ds4 .start {
+    width: 28px;
+    height: 46px;
+    background: url(https://matiinb.github.io/dawn-controller/start_select.png) no-repeat;
+    background-size: 56px 46px;
+    opacity: 0;
+}
+
+.ds4 .back {
+    float: left;
+    background-position: 0 0;
+}
+
+.ds4 .start {
+    float: right;
+    background-position: -28px 0;
+}
+
+.ds4 .back.pressed,
+.ds4 .start.pressed {
+    opacity: 1;
+}
+
+/* FACE BUTTONS */
+.ds4 .abxy {
+    position: absolute;
+    left: 567px;
+    top: 159px;
+    width: 170px;
+    height: 171px;
+}
+
+.ds4 .button {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: url(https://matiinb.github.io/dawn-controller/buttons.png) no-repeat;
+    background-size: 220px 110px;
+}
+
+/* sprite columns: [Y][B][A][X] */
+.ds4 .y {
+    left: 58px;
+    top: 0;
+    background-position: 0 0;
+}
+
+.ds4 .b {
+    top: 58px;
+    right: 0;
+    background-position: -55px 0;
+}
+
+.ds4 .a {
+    bottom: 0;
+    left: 58px;
+    background-position: -110px 0;
+}
+
+.ds4 .x {
+    top: 58px;
+    left: 0;
+    background-position: -165px 0;
+}
+
+/* second row = pressed */
+.ds4 .button.pressed {
+    background-position-y: -55px;
+}
+
+/* STICKS */
+.ds4 .sticks {
+    position: absolute;
+    left: 228px;
+    top: 308px;
+    width: 361px;
+    height: 105px;
+}
+
+.ds4 .stick {
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    background: url(https://matiinb.github.io/dawn-controller/sticks.png) no-repeat;
+    background-size: 282px 94px;
+    background-position: 0 0;
+}
+
+.ds4 .stick.left {
+    top: 0;
+    left: 0;
+}
+
+.ds4 .stick.right {
+    top: 11px;
+    left: 256px;
+}
+
+.ds4 .stick.pressed.left {
+    background-position: -94px 0;
+}
+
+.ds4 .stick.pressed.right {
+    background-position: -188px 0;
+}
+
+/* DPAD */
+.ds4 .dpad {
+    position: absolute;
+    left: 92px;
+    top: 181px;
+    width: 125px;
+    height: 126px;
+}
+
+.ds4 .face {
+    position: absolute;
+    background: url(https://matiinb.github.io/dawn-controller/dpad.png) no-repeat;
+    background-size: 208px 104px;
+}
+
+/* each tile is 52x52 logical
+   row 1 = normal, row 2 = pressed
+   columns = [UP][DOWN][LEFT][RIGHT]
+*/
+
+.ds4 .face.up,
+.ds4 .face.down {
+    width: 36px;
+    height: 52px;
+}
+
+.ds4 .face.left,
+.ds4 .face.right {
+    width: 52px;
+    height: 36px;
+}
+
+.ds4 .face.up {
+    left: 44px;
+    top: 0;
+    background-position: 0 0;
+}
+
+.ds4 .face.down {
+    left: 44px;
+    bottom: 0;
+    background-position: -52px 0;
+}
+
+.ds4 .face.left {
+    left: 0;
+    top: 45px;
+    background-position: -104px 0;
+}
+
+.ds4 .face.right {
+    right: 0;
+    top: 45px;
+    background-position: -156px 0;
+}
+
+.ds4 .face.pressed {
+    background-position-y: -52px;
+}
+
+/* OPTIONAL */
+.ds4.half {
+    margin-top: -300px;
+}
+
+/* END CLEAN PS4 CONTROLLER CSS */
