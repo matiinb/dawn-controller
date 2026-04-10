@@ -10,14 +10,14 @@
     mix-blend-mode: screen;
     pointer-events: none;
     z-index: 999;
-    mask-image: url(https://matiinb.github.io/dawn-controller/mask.png);
-    mask-repeat: no-repeat;
-    mask-position: -124px 0px;
-    mask-size: auto 587px;
     -webkit-mask-image: url(https://matiinb.github.io/dawn-controller/mask.png);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: -124px 0px;
     -webkit-mask-size: auto 587px;
+    mask-image: url(https://matiinb.github.io/dawn-controller/mask.png);
+    mask-repeat: no-repeat;
+    mask-position: -124px 0px;
+    mask-size: auto 587px;
 }
 
 .controller.custom {
