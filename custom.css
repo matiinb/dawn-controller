@@ -4,7 +4,7 @@
 
 .controller.custom {
     position: fixed !important;
-    top: 50% !important;
+    top: 46% !important;
     left: 50% !important;
     width: 806px !important;
     height: 598px !important;
@@ -181,10 +181,10 @@
    ------------------------- */
 .custom .abxy {
     position: absolute;
-    left: 515px;
-    top: 195px;
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 171px;
+    top: 159px;
+    left: 567px;
 }
 
 .custom .button {
@@ -195,28 +195,28 @@
     background-size: 220px 110px;
 }
 
-.custom .y {
-    left: 47px;
-    top: 0;
-    background-position: 0 0;
+.custom .a {
+    background-position: -110px 0;
+    bottom: 0;
+    left: 58px;
 }
 
 .custom .b {
-    top: 47px;
-    right: 0;
     background-position: -55px 0;
-}
-
-.custom .a {
-    bottom: 0;
-    left: 47px;
-    background-position: -110px 0;
+    top: 58px;
+    right: 0;
 }
 
 .custom .x {
-    top: 47px;
-    left: 0;
     background-position: -165px 0;
+    top: 58px;
+    left: 0;
+}
+
+.custom .y {
+    background-position: 0 0;
+    left: 58px;
+    top: 0;
 }
 
 .custom .button.pressed {
@@ -232,10 +232,10 @@
    ------------------------- */
 .custom .sticks {
     position: absolute;
-    left: 205px;
-    top: 320px;
-    width: 390px;
-    height: 120px;
+    width: 361px;
+    height: 105px;
+    top: 308px;
+    left: 228px;
 }
 
 .custom .stick {
@@ -244,7 +244,6 @@
     height: 94px;
     background: url("https://matiinb.github.io/dawn-controller/sticks.png") no-repeat;
     background-size: 282px 94px;
-    background-position: 0 0;
 }
 
 .custom .stick.left {
@@ -253,16 +252,16 @@
 }
 
 .custom .stick.right {
-    top: 0;
-    left: 290px;
+    top: calc(100% - 105px);
+    left: calc(100% - 105px);
 }
 
 .custom .stick.pressed.left {
-    background-position: -94px 0;
+    background-position-x: -94px;
 }
 
 .custom .stick.pressed.right {
-    background-position: -188px 0;
+    background-position-x: -188px;
 }
 
 /* -------------------------
@@ -276,16 +275,16 @@
    ------------------------- */
 .custom .dpad {
     position: absolute;
-    left: 92px;
-    top: 181px;
     width: 125px;
     height: 126px;
+    top: 181px;
+    left: 92px;
 }
 
 .custom .face {
-    position: absolute;
     background: url("https://matiinb.github.io/dawn-controller/dpad.png") no-repeat;
     background-size: 208px 104px;
+    position: absolute;
 }
 
 .custom .face.up,
@@ -313,14 +312,14 @@
 }
 
 .custom .face.left {
-    left: 0;
     top: 45px;
+    left: 0;
     background-position: -104px 0;
 }
 
 .custom .face.right {
-    right: 0;
     top: 45px;
+    right: 0;
     background-position: -156px 0;
 }
 
