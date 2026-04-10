@@ -1,0 +1,332 @@
+/* =========================
+   CUSTOM PS4-STYLE SKIN
+   ========================= */
+
+.controller.custom {
+    position: relative;
+    width: 806px;
+    height: 598px;
+    background: url("https://matiinb.github.io/dawn-controller/base.png") no-repeat;
+    background-size: 806px 598px;
+}
+
+/* disconnected */
+.custom.disconnected {
+    /*background: url("https://matiinb.github.io/dawn-controller/disconnected.png") no-repeat;*/
+    background-size: 806px 598px;
+}
+
+.custom.disconnected div {
+    display: none;
+}
+
+/* -------------------------
+   triggers
+   file: triggers.png
+   logical size: 198 x 90
+   layout: [L2][R2]
+   ------------------------- */
+.custom .triggers {
+    position: absolute;
+    left: 109px;
+    top: 0;
+    width: 588px;
+    height: 90px;
+}
+
+.custom .trigger {
+    width: 99px;
+    height: 90px;
+    background: url("https://matiinb.github.io/dawn-controller/triggers.png") no-repeat;
+    background-size: 198px 90px;
+    opacity: 0;
+}
+
+.custom .trigger.left {
+    float: left;
+    background-position: 0 0;
+}
+
+.custom .trigger.right {
+    float: right;
+    background-position: -99px 0;
+}
+
+.custom .trigger.pressed {
+    opacity: 1;
+}
+
+/* -------------------------
+   bumpers
+   file: bumper.png
+   logical size: 99 x 23
+   ------------------------- */
+.custom .bumpers {
+    position: absolute;
+    left: 109px;
+    top: 94px;
+    width: 588px;
+    height: 23px;
+}
+
+.custom .bumper {
+    width: 99px;
+    height: 23px;
+    background: url("https://matiinb.github.io/dawn-controller/bumper.png") no-repeat;
+    background-size: 99px 23px;
+    opacity: 0;
+}
+
+.custom .bumper.left {
+    float: left;
+}
+
+.custom .bumper.right {
+    float: right;
+    transform: rotateY(180deg);
+}
+
+.custom .bumper.pressed {
+    opacity: 1;
+}
+
+/* -------------------------
+   touchpad
+   file: touchpad.png
+   logical size: 262 x 151
+   ------------------------- */
+.custom .touchpad {
+    position: absolute;
+    left: 272px;
+    top: 122px;
+    width: 262px;
+    height: 151px;
+}
+
+.custom .touchpad.pressed {
+    background: url("https://matiinb.github.io/dawn-controller/touchpad.png") no-repeat;
+    background-size: 262px 151px;
+}
+
+/* -------------------------
+   meta / ps button
+   file: meta.png
+   logical size: 42 x 42
+   ------------------------- */
+.custom .meta {
+    position: absolute;
+    left: 382px;
+    bottom: 216px;
+    width: 42px;
+    height: 42px;
+}
+
+.custom .meta.pressed {
+    /*background: url("https://matiinb.github.io/dawn-controller/meta.png") no-repeat;*/
+    background-size: 42px 42px;
+}
+
+/* -------------------------
+   back / start
+   file: start-select.png
+   logical size: 56 x 46
+   layout: [BACK][START]
+   ------------------------- */
+.custom .arrows {
+    position: absolute;
+    left: 227px;
+    top: 142px;
+    width: 352px;
+    height: 46px;
+}
+
+.custom .back,
+.custom .start {
+    width: 28px;
+    height: 46px;
+    background: url("https://matiinb.github.io/dawn-controller/start_select.png") no-repeat;
+    background-size: 56px 46px;
+    opacity: 0;
+}
+
+.custom .back {
+    float: left;
+    background-position: 0 0;
+}
+
+.custom .start {
+    float: right;
+    background-position: -28px 0;
+}
+
+.custom .back.pressed,
+.custom .start.pressed {
+    opacity: 1;
+}
+
+/* -------------------------
+   face buttons
+   file: buttons.png
+   logical size: 220 x 110
+   layout:
+   row 1: [Y][B][A][X]
+   row 2: pressed versions
+   each tile: 55 x 55
+   ------------------------- */
+.custom .abxy {
+    position: absolute;
+    left: 567px;
+    top: 159px;
+    width: 170px;
+    height: 171px;
+}
+
+.custom .button {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: url("https://matiinb.github.io/dawn-controller/buttons.png") no-repeat;
+    background-size: 220px 110px;
+}
+
+/* Y = top */
+.custom .y {
+    left: 58px;
+    top: 0;
+    background-position: 0 0;
+}
+
+/* B = right */
+.custom .b {
+    top: 58px;
+    right: 0;
+    background-position: -55px 0;
+}
+
+/* A = bottom */
+.custom .a {
+    bottom: 0;
+    left: 58px;
+    background-position: -110px 0;
+}
+
+/* X = left */
+.custom .x {
+    top: 58px;
+    left: 0;
+    background-position: -165px 0;
+}
+
+.custom .button.pressed {
+    background-position-y: -55px;
+}
+
+/* -------------------------
+   sticks
+   file: sticks.png
+   logical size: 282 x 94
+   layout: [normal][left pressed][right pressed]
+   each tile: 94 x 94
+   ------------------------- */
+.custom .sticks {
+    position: absolute;
+    left: 228px;
+    top: 308px;
+    width: 361px;
+    height: 105px;
+}
+
+.custom .stick {
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    background: url("https://matiinb.github.io/dawn-controller/sticks.png") no-repeat;
+    background-size: 282px 94px;
+    background-position: 0 0;
+}
+
+.custom .stick.left {
+    top: 0;
+    left: 0;
+}
+
+.custom .stick.right {
+    top: 11px;
+    left: 256px;
+}
+
+.custom .stick.pressed.left {
+    background-position: -94px 0;
+}
+
+.custom .stick.pressed.right {
+    background-position: -188px 0;
+}
+
+/* -------------------------
+   dpad
+   file: dpad.png
+   logical size: 208 x 104
+   layout:
+   row 1: [UP][DOWN][LEFT][RIGHT]
+   row 2: pressed versions
+   each tile: 52 x 52
+   ------------------------- */
+.custom .dpad {
+    position: absolute;
+    left: 92px;
+    top: 181px;
+    width: 125px;
+    height: 126px;
+}
+
+.custom .face {
+    position: absolute;
+    background: url("https://matiinb.github.io/dawn-controller/dpad.png") no-repeat;
+    background-size: 208px 104px;
+}
+
+.custom .face.up,
+.custom .face.down {
+    width: 36px;
+    height: 52px;
+}
+
+.custom .face.left,
+.custom .face.right {
+    width: 52px;
+    height: 36px;
+}
+
+.custom .face.up {
+    left: 44px;
+    top: 0;
+    background-position: 0 0;
+}
+
+.custom .face.down {
+    left: 44px;
+    bottom: 0;
+    background-position: -52px 0;
+}
+
+.custom .face.left {
+    left: 0;
+    top: 45px;
+    background-position: -104px 0;
+}
+
+.custom .face.right {
+    right: 0;
+    top: 45px;
+    background-position: -156px 0;
+}
+
+.custom .face.pressed {
+    background-position-y: -52px;
+}
+
+/* optional */
+.custom.half {
+    margin-top: -300px;
+}
