@@ -35,7 +35,7 @@
 .custom .triggers {
     position: absolute;
     left: 104px;
-    top: -6px;
+    top: 0px;
     width: 588px;
     height: 90px;
 }
@@ -51,11 +51,13 @@
 .custom .trigger.left {
     float: left;
     background-position: 0 0;
+    transform: translate(6px, -3px) scale(0.93);
 }
 
 .custom .trigger.right {
     float: right;
     background-position: -99px 0;
+    transform: scale(0.93);
 }
 
 .custom .trigger.pressed {
@@ -85,11 +87,11 @@
 
 .custom .bumper.left {
     float: left;
+    transform: rotateY(180deg);
 }
 
 .custom .bumper.right {
     float: right;
-    transform: rotateY(180deg);
 }
 
 .custom .bumper.pressed {
