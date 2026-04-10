@@ -3,18 +3,17 @@
    ========================= */
 
 .controller.custom {
-    position: fixed;
-    bottom: 50px;
-    left: 50px;
-    /*position: relative;*/
-    width: 806px;
-    height: 598px;
-    background: url("https://matiinb.github.io/dawn-controller/base.png") no-repeat;
-    background-size: 806px 598px;
-}
-
-.controller.custom {
-    
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    width: 806px !important;
+    height: 598px !important;
+    margin: 0 !important;
+    transform: translate(-50%, -50%) !important;
+    transform-origin: center center !important;
+    background: url("https://matiinb.github.io/dawn-controller/base.png") no-repeat !important;
+    background-size: 806px 598px !important;
+    overflow: visible !important;
 }
 
 /* disconnected */
@@ -182,10 +181,10 @@
    ------------------------- */
 .custom .abxy {
     position: absolute;
-    left: 567px;
-    top: 159px;
-    width: 170px;
-    height: 171px;
+    left: 515px;
+    top: 195px;
+    width: 150px;
+    height: 150px;
 }
 
 .custom .button {
@@ -196,30 +195,26 @@
     background-size: 220px 110px;
 }
 
-/* Y = top */
 .custom .y {
-    left: 58px;
+    left: 47px;
     top: 0;
     background-position: 0 0;
 }
 
-/* B = right */
 .custom .b {
-    top: 58px;
+    top: 47px;
     right: 0;
     background-position: -55px 0;
 }
 
-/* A = bottom */
 .custom .a {
     bottom: 0;
-    left: 58px;
+    left: 47px;
     background-position: -110px 0;
 }
 
-/* X = left */
 .custom .x {
-    top: 58px;
+    top: 47px;
     left: 0;
     background-position: -165px 0;
 }
@@ -237,10 +232,10 @@
    ------------------------- */
 .custom .sticks {
     position: absolute;
-    left: 228px;
-    top: 308px;
-    width: 361px;
-    height: 105px;
+    left: 205px;
+    top: 320px;
+    width: 390px;
+    height: 120px;
 }
 
 .custom .stick {
@@ -258,8 +253,8 @@
 }
 
 .custom .stick.right {
-    top: 11px;
-    left: 256px;
+    top: 0;
+    left: 290px;
 }
 
 .custom .stick.pressed.left {
