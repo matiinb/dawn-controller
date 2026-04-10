@@ -34,8 +34,8 @@
    ------------------------- */
 .custom .triggers {
     position: absolute;
-    left: 109px;
-    top: 0;
+    left: 104px;
+    top: -6px;
     width: 588px;
     height: 90px;
 }
@@ -69,8 +69,8 @@
    ------------------------- */
 .custom .bumpers {
     position: absolute;
-    left: 109px;
-    top: 94px;
+    left: 107px;
+    top: 84px;
     width: 588px;
     height: 23px;
 }
@@ -141,7 +141,7 @@
 .custom .arrows {
     position: absolute;
     left: 227px;
-    top: 142px;
+    top: 130px;
     width: 352px;
     height: 46px;
 }
@@ -183,7 +183,7 @@
     position: absolute;
     width: 170px;
     height: 171px;
-    top: 159px;
+    top: 148px;
     left: 567px;
 }
 
@@ -234,7 +234,7 @@
     position: absolute;
     width: 361px;
     height: 105px;
-    top: 308px;
+    top: 293px;
     left: 228px;
 }
 
@@ -252,8 +252,8 @@
 }
 
 .custom .stick.right {
-    top: calc(100% - 105px);
-    left: calc(100% - 105px);
+    top: calc(100% - 103px);
+    left: calc(100% - 108px);
 }
 
 .custom .stick.pressed.left {
@@ -277,7 +277,7 @@
     position: absolute;
     width: 125px;
     height: 126px;
-    top: 181px;
+    top: 167px;
     left: 92px;
 }
 
@@ -289,38 +289,38 @@
 
 .custom .face.up,
 .custom .face.down {
-    width: 36px;
+    width: 48px;
     height: 52px;
 }
 
 .custom .face.left,
 .custom .face.right {
     width: 52px;
-    height: 36px;
+    height: 44px;
 }
 
 .custom .face.up {
-    left: 44px;
+    left: 42px;
     top: 0;
-    background-position: 0 0;
+    background-position: -6 0;
 }
 
 .custom .face.down {
-    left: 44px;
+    left: 35px;
     bottom: 0;
     background-position: -52px 0;
 }
 
 .custom .face.left {
-    top: 45px;
+    top: 38px;
     left: 0;
-    background-position: -104px 0;
+    background-position: -156px 0;
 }
 
 .custom .face.right {
-    top: 45px;
+    top: 38px;
     right: 0;
-    background-position: -156px 0;
+    background-position: -104px 0;
 }
 
 .custom .face.pressed {
