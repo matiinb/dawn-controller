@@ -18,7 +18,7 @@
 
 /* disconnected */
 .custom.disconnected {
-    /*background: url("https://matiinb.github.io/dawn-controller/disconnected.png") no-repeat;*/
+    background: url("https://matiinb.github.io/dawn-controller/disconnected.png") no-repeat;
     background-size: 806px 598px;
 }
 
@@ -150,7 +150,7 @@
 .custom .start {
     width: 28px;
     height: 46px;
-    background: url("https://matiinb.github.io/dawn-controller/start_select.png") no-repeat;
+    background: url("https://matiinb.github.io/dawn-controller/start-select.png") no-repeat;
     background-size: 56px 46px;
     opacity: 0;
 }
@@ -300,7 +300,7 @@
 }
 
 .custom .face.up {
-    left: 42px;
+    left: 36px;
     top: 0;
     background-position: -6 0;
 }
@@ -312,8 +312,8 @@
 }
 
 .custom .face.left {
-    top: 38px;
-    left: 0;
+    top: 36px;
+    left: -1;
     background-position: -156px 0;
 }
 
